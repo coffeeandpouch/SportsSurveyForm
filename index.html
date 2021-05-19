@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='styles.css'
+  </head>
+  <body>
+    <h1 id="title">Sports Survey Form</h1>
+    <p id="description">Where we get all of our questions answered about sports</p>
+    <form id="survey-form">
+      <label for="name" id="name-label" >Name:</label>
+      <input type="text" id="name" placeholder="Enter name here" required /><br>
+      <label for="email" id="email-label">Email:</label>
+      <input  type="email" id="email" placeholder="Enter email here" required /><br>
+      <label for="number"
+      id="number-label">Age:</label>
+         <input type="number"
+        id="number"
+        placeholder="Age"
+        min="0"
+        max="120"
+        required></label><br>
+
+        <div class=radio>
+          <p>Do you like sports?</p>
+          <input type="checkbox" id="yes" name="like-sports" value="sports?">
+          <label for="yes">Yes</label>
+          <input type="checkbox" id="no" name="like-sports" value="sports?">
+        <label for="no">No</label></input>
+        </div>
+
+      <div class="radio">
+        <p>Gender?</p>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="no-id" name="gender" value="no-id">
+      <label for="no-id">I choose not to identify</label><br>
+    </div>
+
+      <label for="sports">Choose your favorite sport</label>
+      <select name="sport" id="dropdown">
+        <option value="football">Football</option>
+        <option value="basketball">Basketball</option>
+        <option value="soccer">Soccer/Futbol</option>
+        <option value="baseball">Baseball</option>
+        <option value="hockey">Hockey</option>
+        <option value="lacrosse">Lacrosse</option>
+      </select><br>
+
+      <label for="comments">Please let us know if you have any additional comments below:</label><br>
+      <textarea id="comments" name="comments"
+      rows="8" cols="44"></textarea><br>
+      <input type='submit' id='submit' ></input>
+    </form>
+    <footer>
+      <p>&copy; 2021-Sam</p>
+    </footer>
+</body>
+</html>
